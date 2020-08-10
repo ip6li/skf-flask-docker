@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  skf:
+    build:
+      context: .
+    logging:
+      driver: json-file
+    ports:
+      - 80:80
+      - 443:443
+
